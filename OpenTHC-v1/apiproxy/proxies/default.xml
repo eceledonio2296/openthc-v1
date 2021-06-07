@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<ProxyEndpoint name="default">
+  <Description>OpenTHC API</Description>
+  <PreFlow name="PreFlow">
+    <Request/>
+    <Response/>
+  </PreFlow>
+  <Flows>
+    <Flow name="POST /auth/open">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/auth/open&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Authenticate to the System</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /auth/ping">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/auth/ping&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Validate a Session Token</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /auth/shut">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/auth/shut&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Close the Session</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /company">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/company&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Search Company Data</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /company">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/company&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Create a Company</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /company/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/company/{id}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Company</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /license">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/license&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Search the License Data</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /license">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/license&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Create a License</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /license/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/license/{id}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>License</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /license/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/license/{id}&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Update a License</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /contact">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/contact&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Search Contacts</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /contact">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/contact&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Create Contact</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /contact/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/contact/{id}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Select Contact</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /contact/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/contact/{id}&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Update Contact</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /product">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/product&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Search Product Data</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /product">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/product&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Create a Product</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /product/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/product/{id}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Specific Product Data</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /product/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/product/{id}&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Update a Product</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /product-type">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/product-type&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get List of Product Types</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /product-type">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/product-type&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Create Product Type</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /product-type/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/product-type/{id}&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Modify Product Type</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="DELETE /product-type/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/product-type/{id}&quot;) and (request.verb = &quot;DELETE&quot;)</Condition>
+      <Description>Delete Product Type</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /variety">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/variety&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Search Variety Data</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /variety">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/variety&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Create a Variety</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /variety/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/variety/{id}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get a Variety</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /variety/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/variety/{id}&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Update Variety</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="DELETE /variety/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/variety/{id}&quot;) and (request.verb = &quot;DELETE&quot;)</Condition>
+      <Description>Delete Variety Type</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /section">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/section&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get a LIst of all the Sections</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /section">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/section&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Create a Section (aka: Area or Room)</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /section/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/section/{id}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Section Data</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /section/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/section/{id}&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Update a Section (aka: Area or Room)</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="DELETE /section/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/section/{id}&quot;) and (request.verb = &quot;DELETE&quot;)</Condition>
+      <Description>Delete a Section (aka Archive)</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /lot">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lot&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get a list of Inventory Lot Objects</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /lot">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lot&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Create, Convert or Split an Inventory Lot object</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /lot/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lot/{id}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>View Inventory Lot</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="PATCH /lot/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lot/{id}&quot;) and (request.verb = &quot;PATCH&quot;)</Condition>
+      <Description>Update Inventory Lot</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="DELETE /lot/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lot/{id}&quot;) and (request.verb = &quot;DELETE&quot;)</Condition>
+      <Description>Delete the Inventory Lot</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /lot/{id}/adjust">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lot/{id}/adjust&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Adjust Inventory Lot</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /lot/{id}/destroy">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lot/{id}/destroy&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Destroy Inventory Lot</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /plant">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/plant&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get a List of Plants</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /plant">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/plant&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Create a Plant</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /plant/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/plant/{id}&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Modify Plant Data</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="DELETE /plant/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/plant/{id}&quot;) and (request.verb = &quot;DELETE&quot;)</Condition>
+      <Description>Delete the Plants</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /plant/{id}/collect">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/plant/{id}/collect&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Collect Materials from a Plant</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /plant-collect/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/plant-collect/{id}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Commit this Plant Collect group into Inventory Lot</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /plant-collect/{id}/commit">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/plant-collect/{id}/commit&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Commit this Plant Collect group into Inventory Lot</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /lab/metric">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lab/metric&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get a List of Supported Lab Metrics</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /lab/sample">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lab/sample&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get a list of Lab Samples</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /lab/sample/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lab/sample/{id}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get a Specific Sample</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="DELETE /lab/sample/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lab/sample/{id}&quot;) and (request.verb = &quot;DELETE&quot;)</Condition>
+      <Description>Void a Lab Sample</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /lab/result">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lab/result&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Search the Lab Result</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /lab/result/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lab/result/{id}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get just the Lab Result Details for this specific Lab Sample</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /lab/result/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/lab/result/{id}&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Modify/Update the Lab Results</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /b2b">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/b2b&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Export or Import B2B_Sales List</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /b2b">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/b2b&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Create B2B_Sale</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /b2b/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/b2b/{id}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Specific B2B_Sale</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /b2b/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/b2b/{id}&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Update a B2B_Sale</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="DELETE /b2b/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/b2b/{id}&quot;) and (request.verb = &quot;DELETE&quot;)</Condition>
+      <Description>Void the B2B_Sale</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /b2c">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/b2c&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Sale Data</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /b2c">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/b2c&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Post a Sale</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GET /b2c/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/b2c/{id}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get B2C Sales Details</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="DELETE /b2c/{id}">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/b2c/{id}&quot;) and (request.verb = &quot;DELETE&quot;)</Condition>
+      <Description>Void a B2C Sale</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+  </Flows>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <HTTPProxyConnection>
+    <BasePath>/OpenTHC-v1</BasePath>
+    <VirtualHost>default</VirtualHost>
+    <VirtualHost>secure</VirtualHost>
+  </HTTPProxyConnection>
+  <RouteRule name="default">
+    <TargetEndpoint>default</TargetEndpoint>
+  </RouteRule>
+</ProxyEndpoint>
