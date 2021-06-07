@@ -1,0 +1,1 @@
+Hello folks!, We have created detailed documentation, published with Asciidoc and OpenAPI. It provides details on authentication, plants, inventory, transfers, retail sales and the others details necessary to create robust cannabis applications. 
